@@ -39,5 +39,4 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root,-)
 %doc docs/index.txt docs/license.txt
-%{_bindir}/*
 %{py_puresitedir}/*
