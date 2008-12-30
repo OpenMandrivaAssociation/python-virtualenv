@@ -1,6 +1,6 @@
 %define module	virtualenv
 %define name	python-%{module}
-%define version	1.3
+%define version	1.3.2
 
 Name:		%{name}
 Version:	%{version}
@@ -9,9 +9,9 @@ Summary:	Virtual Python Environment builder
 Group:		Development/Python
 License:	MIT
 URL:		http://pypi.python.org/pypi/virtualenv
-Source0:	http://pypi.python.org/packages/source/v/virtualenv/%{module}-%{version}.tar.lzma
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+Source0:	http://pypi.python.org/packages/source/v/virtualenv/%{module}-%{version}.tar.gz
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 %py_requires -d
 
 %description
@@ -25,12 +25,16 @@ virtualenv is a tool to create isolated Python environments.
 
 %install
 %__rm -rf %{buildroot}
-%{__python} setup.py install --root=%{buildroot} --record=FILE_LIST
+%{__python} setup.py install --root=%{buildroot}
 
 %clean
 %__rm -rf %{buildroot}
 
-%files -f FILE_LIST
+%files
 %defattr(-,root,root,-)
 %doc docs/*.txt
-
+%{_bindir}/*
+%{python_sitelib}/*.py
+%{python_sitelib}/*.pyc
+%{python_sitelib}/*.egg-info
+%{python_sitelib}/support-files/*
