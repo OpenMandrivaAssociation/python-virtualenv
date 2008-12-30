@@ -11,6 +11,7 @@ License:	MIT
 URL:		http://pypi.python.org/pypi/virtualenv
 Source0:	http://pypi.python.org/packages/source/v/virtualenv/%{module}-%{version}.tar.gz
 BuildArch:	noarch
+BuildRequires:	python-setuptools
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 %py_requires -d
 
