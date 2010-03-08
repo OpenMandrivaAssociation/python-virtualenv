@@ -1,6 +1,6 @@
 %define module	virtualenv
 %define name	python-%{module}
-%define version	1.3.3
+%define version	1.4.5
 
 Name:		%{name}
 Version:	%{version}
@@ -10,7 +10,6 @@ Group:		Development/Python
 License:	MIT
 URL:		http://pypi.python.org/pypi/virtualenv
 Source0:	http://pypi.python.org/packages/source/v/virtualenv/%{module}-%{version}.tar.gz
-Patch0:		multiarch.patch
 BuildArch:	noarch
 BuildRequires:	python-setuptools
 BuildRoot:	%{_tmppath}/%{name}-%{version}
@@ -21,7 +20,6 @@ virtualenv is a tool to create isolated Python environments.
 
 %prep
 %setup -q -n %{module}-%{version}
-%patch0 -p0 -b .multiarch
 
 %build
 %{__python} setup.py build
@@ -40,4 +38,8 @@ virtualenv is a tool to create isolated Python environments.
 %{python_sitelib}/*.py
 %{python_sitelib}/*.pyc
 %{python_sitelib}/*.egg-info
-%{python_sitelib}/support-files/*
+%{_libdir}/python2.6/site-packages/virtualenv_support/__init__.py
+%{_libdir}/python2.6/site-packages/virtualenv_support/__init__.pyc
+%{_libdir}/python2.6/site-packages/virtualenv_support/distribute-0.6.8.tar.gz
+%{_libdir}/python2.6/site-packages/virtualenv_support/pip-0.6.3.tar.gz
+%{_libdir}/python2.6/site-packages/virtualenv_support/setuptools-0.6c11-py2.6.egg
