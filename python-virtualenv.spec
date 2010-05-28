@@ -1,6 +1,6 @@
 %define module	virtualenv
 %define name	python-%{module}
-%define version	1.4.5
+%define version	1.4.9
 
 Name:		%{name}
 Version:	%{version}
@@ -35,11 +35,11 @@ virtualenv is a tool to create isolated Python environments.
 %defattr(-,root,root,-)
 %doc docs/*.txt
 %{_bindir}/*
-%{python_sitelib}/*.py
-%{python_sitelib}/*.pyc
-%{python_sitelib}/*.egg-info
-%{_libdir}/python2.6/site-packages/virtualenv_support/__init__.py
-%{_libdir}/python2.6/site-packages/virtualenv_support/__init__.pyc
-%{_libdir}/python2.6/site-packages/virtualenv_support/distribute-0.6.8.tar.gz
-%{_libdir}/python2.6/site-packages/virtualenv_support/pip-0.6.3.tar.gz
-%{_libdir}/python2.6/site-packages/virtualenv_support/setuptools-0.6c11-py2.6.egg
+%{py_sitedir}/*.py
+%{py_sitedir}/*.pyc
+%{py_sitedir}/*.egg-info
+%{py_sitedir}/virtualenv_support/__init__.py
+%{py_sitedir}/virtualenv_support/__init__.pyc
+%{py_sitedir}/virtualenv_support/distribute-0.6.8.tar.gz
+%{py_sitedir}/virtualenv_support/pip-0.7.2.tar.gz
+%{py_sitedir}/virtualenv_support/setuptools-0.6c11-py2.6.egg
