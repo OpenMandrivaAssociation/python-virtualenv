@@ -4,7 +4,7 @@
 
 Name:		%{name}
 Version:	%{version}
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	Virtual Python Environment builder
 Group:		Development/Python
 License:	MIT
@@ -22,24 +22,15 @@ virtualenv is a tool to create isolated Python environments.
 %setup -q -n %{module}-%{version}
 
 %build
-%{__python} setup.py build
+PYTHONDONTWRITEBYTECODE= %{__python} setup.py build
 
 %install
 %__rm -rf %{buildroot}
-%{__python} setup.py install --root=%{buildroot}
+PYTHONDONTWRITEBYTECODE= %{__python} setup.py install --root=%{buildroot} --record=FILE_LIST
 
 %clean
 %__rm -rf %{buildroot}
 
-%files
+%files -f FILE_LIST
 %defattr(-,root,root,-)
 %doc docs/*.txt
-%{_bindir}/*
-%{py_sitedir}/*.py
-%{py_sitedir}/*.pyc
-%{py_sitedir}/*.egg-info
-%{py_sitedir}/virtualenv_support/__init__.py
-%{py_sitedir}/virtualenv_support/__init__.pyc
-%{py_sitedir}/virtualenv_support/distribute-0.6.8.tar.gz
-%{py_sitedir}/virtualenv_support/pip-0.7.2.tar.gz
-%{py_sitedir}/virtualenv_support/setuptools-0.6c11-py2.6.egg
