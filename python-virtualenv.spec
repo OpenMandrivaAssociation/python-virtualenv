@@ -4,12 +4,13 @@
 
 Name:		%{name}
 Version:	%{version}
-Release:	%mkrel 2
+Release:	%mkrel 3
 Summary:	Virtual Python Environment builder
 Group:		Development/Python
 License:	MIT
 URL:		http://pypi.python.org/pypi/virtualenv
 Source0:	http://pypi.python.org/packages/source/v/virtualenv/%{module}-%{version}.tar.gz
+Patch0:		multiarch.patch
 BuildArch:	noarch
 BuildRequires:	python-setuptools
 BuildRoot:	%{_tmppath}/%{name}-%{version}
@@ -20,6 +21,7 @@ virtualenv is a tool to create isolated Python environments.
 
 %prep
 %setup -q -n %{module}-%{version}
+%patch0 -p0 -b .multiarch
 
 %build
 PYTHONDONTWRITEBYTECODE= %{__python} setup.py build
