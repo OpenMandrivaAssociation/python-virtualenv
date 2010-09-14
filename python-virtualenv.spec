@@ -1,6 +1,6 @@
 %define module	virtualenv
 %define name	python-%{module}
-%define version	1.4.9
+%define version	1.5
 
 Name:		%{name}
 Version:	%{version}
