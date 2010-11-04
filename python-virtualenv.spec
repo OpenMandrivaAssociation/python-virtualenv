@@ -4,7 +4,7 @@
 
 Name:		%{name}
 Version:	%{version}
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	Virtual Python Environment builder
 Group:		Development/Python
 License:	MIT
