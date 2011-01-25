@@ -15,7 +15,6 @@ Patch0:		multiarch.patch
 BuildArch:	noarch
 BuildRequires:	python-setuptools
 BuildRoot:	%{_tmppath}/%{name}-%{version}
-%py_requires -d
 
 %description
 virtualenv is a tool to create isolated Python environments.
