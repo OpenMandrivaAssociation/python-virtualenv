@@ -4,7 +4,7 @@
 
 Name:		%{name}
 Version:	%{version}
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	Virtual Python Environment builder
 Group:		Development/Python
 License:	MIT
@@ -15,6 +15,7 @@ Patch0:		multiarch-1.6.patch
 BuildArch:	noarch
 BuildRequires:	python-setuptools
 BuildRoot:	%{_tmppath}/%{name}-%{version}
+Requires:	python-devel
 
 %description
 virtualenv is a tool to create isolated Python environments.
