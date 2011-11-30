@@ -1,10 +1,10 @@
 %define module	virtualenv
 %define name	python-%{module}
-%define version	1.6.4
+%define version	1.7
 
 Name:		%{name}
 Version:	%{version}
-Release:	%mkrel 2
+Release:	%mkrel 1
 Summary:	Virtual Python Environment builder
 Group:		Development/Python
 License:	MIT
