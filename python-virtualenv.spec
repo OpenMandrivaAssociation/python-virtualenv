@@ -29,12 +29,14 @@ PYTHONDONTWRITEBYTECODE= %{__python} setup.py build
 
 %install
 %__rm -rf %{buildroot}
-PYTHONDONTWRITEBYTECODE= %{__python} setup.py install --root=%{buildroot} --record=FILE_LIST
+PYTHONDONTWRITEBYTECODE= %{__python} setup.py install --root=%{buildroot}
 %__install -m 755 %SOURCE1 %{buildroot}%{_bindir}
 
 %clean
 %__rm -rf %{buildroot}
 
-%files -f FILE_LIST
+%files
 %defattr(-,root,root,-)
 %doc docs/*.txt
+%_bindir/virtualenv
+%py_sitedir/virtualenv*
