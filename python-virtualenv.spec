@@ -4,7 +4,7 @@
 
 Name:		%{name}
 Version:	%{version}
-Release:	2
+Release:	3
 Summary:	Virtual Python Environment builder
 Group:		Development/Python
 License:	MIT
