@@ -11,7 +11,6 @@ License:	MIT
 URL:		http://pypi.python.org/pypi/virtualenv
 Source0:	http://pypi.python.org/packages/source/v/virtualenv/%{module}-%{version}.tar.gz
 Source1:	virtualenv
-Patch1:         0001-mageia-multiarch-fix-for-python-virtualenv.patch
 BuildArch:	noarch
 BuildRequires:	python-setuptools
 BuildRoot:	%{_tmppath}/%{name}-%{version}
@@ -22,7 +21,6 @@ virtualenv is a tool to create isolated Python environments.
 
 %prep
 %setup -q -n %{module}-%{version}
-%patch1 -p3 -b .firefox15-build-fix
 
 %build
 PYTHONDONTWRITEBYTECODE= %{__python} setup.py build
