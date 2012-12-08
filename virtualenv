@@ -1,0 +1,3 @@
+#!/bin/bash
+
+PYTHONDONTWRITEBYTECODE= /usr/bin/virtualenv.sh "$@"

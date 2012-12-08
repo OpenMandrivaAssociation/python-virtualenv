@@ -1,0 +1,20 @@
+--- virtualenv.py.bak	2012-06-22 15:01:28.702320585 -0400
++++ virtualenv.py	2012-06-22 15:02:46.938845109 -0400
+@@ -10,6 +10,7 @@
+ import base64
+ import sys
+ import os
++import commands
+ import codecs
+ import optparse
+ import re
+@@ -1087,7 +1088,8 @@
+         bin_dir = join(home_dir, 'bin')
+     elif sys.platform != 'win32':
+         lib_dir = join(home_dir, 'lib', py_version)
+-        inc_dir = join(home_dir, 'include', py_version + abiflags)
++        inc_dir = join(home_dir, 'include', 
++                       commands.getoutput('/usr/bin/multiarch-platform'), py_version + abiflags)
+         bin_dir = join(home_dir, 'bin')
+     return home_dir, lib_dir, inc_dir, bin_dir
+ 
