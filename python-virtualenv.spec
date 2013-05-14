@@ -1,8 +1,10 @@
 %define	module	virtualenv
 
+%define __noautoprov '.*setuptools.*'
+
 Name:		python-%{module}
 Version:	1.8.2
-Release:	5
+Release:	6
 Summary:	Virtual Python Environment builder
 Group:		Development/Python
 License:	MIT
