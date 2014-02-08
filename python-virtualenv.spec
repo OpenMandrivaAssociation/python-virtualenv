@@ -4,7 +4,7 @@
 
 Name:		python-%{module}
 Version:	1.8.2
-Release:	6
+Release:	7
 Summary:	Virtual Python Environment builder
 Group:		Development/Python
 License:	MIT
