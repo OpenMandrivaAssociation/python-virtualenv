@@ -4,7 +4,7 @@
 Summary:	Virtual Python Environment builder
 Name:		python-%{module}
 Version:	1.8.2
-Release:	11
+Release:	12
 Group:		Development/Python
 License:	MIT
 Url:		http://pypi.python.org/pypi/virtualenv
