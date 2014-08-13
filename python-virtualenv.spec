@@ -3,12 +3,12 @@
 
 Summary:	Virtual Python Environment builder
 Name:		python-%{module}
-Version:	1.8.2
-Release:	12
+Version:	1.11.6
+Release:	1
 Group:		Development/Python
 License:	MIT
 Url:		http://pypi.python.org/pypi/virtualenv
-Source0:	http://pypi.python.org/packages/source/v/virtualenv/%{module}-%{version}.tar.gz
+Source0:	https://pypi.python.org/packages/source/v/virtualenv/%{module}-%{version}.tar.gz
 Source1:	virtualenv
 Patch0:		multiarch-1.8.2.patch
 BuildArch:	noarch
@@ -32,7 +32,7 @@ mv %{buildroot}%{_bindir}/virtualenv{,.sh}
 install -m755 %{SOURCE1} -D %{buildroot}%{_bindir}/virtualenv
 
 %files
-%doc docs/*.txt
+%doc docs/*.rst
 %{_bindir}/virtualenv*
 %{py_sitedir}/virtualenv*
 

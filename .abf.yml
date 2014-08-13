@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   virtualenv-1.8.2.tar.gz: 58c696ee6025402278f9c9b4705664e16fff07d6
+sources:
+  virtualenv-1.11.6.tar.gz: d3f8e94bf825cc999924e276c8f1c63b8eeb0715
