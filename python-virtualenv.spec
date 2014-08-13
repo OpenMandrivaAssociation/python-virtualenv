@@ -65,5 +65,5 @@ install -m755 %{SOURCE1} -D %{buildroot}%{_bindir}/virtualenv
 %files -n python2-%{module}
 %{_bindir}/virtualenv2*
 %{_bindir}/virtualenv-2*
-%{py_puresitedir}/virtualenv*
+%{py2_puresitedir}/virtualenv*
 
