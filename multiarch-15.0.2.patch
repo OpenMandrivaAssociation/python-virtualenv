@@ -1,0 +1,11 @@
+--- virtualenv-15.0.2/virtualenv.py.orig	2016-07-01 23:23:54.265295496 +0100
++++ virtualenv-15.0.2/virtualenv.py	2016-07-01 23:24:03.756296208 +0100
+@@ -991,7 +991,7 @@
+         bin_dir = join(home_dir, 'bin')
+     elif not is_win:
+         lib_dir = join(home_dir, 'lib', py_version)
+-        inc_dir = join(home_dir, 'include', py_version + abiflags)
++        inc_dir = join(home_dir, 'include', commands.getoutput('/usr/bin/multiarch-platform'), py_version + abiflags)
+         bin_dir = join(home_dir, 'bin')
+     return home_dir, lib_dir, inc_dir, bin_dir
+ 
