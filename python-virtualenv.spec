@@ -14,6 +14,7 @@ Source2:	virtualenv2
 BuildArch:	noarch
 BuildRequires:	python-setuptools
 BuildRequires:  pkgconfig(python3)
+BuildRequires:  python-pkg-resources
 Requires:	pkgconfig(python3)
 Requires:	rpm-build
 
@@ -23,6 +24,7 @@ virtualenv is a tool to create isolated Python environments.
 %package -n python2-%{module}
 Summary:        Python 2 Virtual Python Env builder
 BuildRequires:  pkgconfig(python2)
+BuildRequires:  python2-pkg-resources
 Requires:       pkgconfig(python2)
 
 %description -n python2-%{module}
