@@ -25,6 +25,7 @@ virtualenv is a tool to create isolated Python environments.
 Summary:        Python 2 Virtual Python Env builder
 BuildRequires:  pkgconfig(python2)
 BuildRequires:  python2-pkg-resources
+BuildRequires:  python2-setuptools
 Requires:       pkgconfig(python2)
 
 %description -n python2-%{module}
