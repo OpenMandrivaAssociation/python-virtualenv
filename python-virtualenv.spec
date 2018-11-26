@@ -3,18 +3,16 @@
 
 Summary:	Virtual Python Environment builder
 Name:		python-%{module}
-Version:	16.0.0
-Release:	2
+Version:	16.1.0
+Release:	1
 Group:		Development/Python
 License:	MIT
 Url:		http://pypi.python.org/pypi/virtualenv
 Source0:	https://pypi.python.org/packages/source/v/virtualenv/%{module}-%{version}.tar.gz
 Source1:	virtualenv
 Source2:	virtualenv2
-Patch0:		multiarch-15.0.2.patch
 BuildArch:	noarch
 BuildRequires:	python-setuptools
-BuildRequires:  pkgconfig(python3)
 BuildRequires:  pkgconfig(python3)
 Requires:	pkgconfig(python3)
 Requires:	rpm-build
@@ -33,7 +31,6 @@ This is the package for python 2.x.
 
 %prep
 %setup -qn %{module}-%{version}
-%apply_patches
 
 mkdir python2
 mv `ls |grep -v python2` python2
