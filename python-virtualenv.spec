@@ -3,7 +3,7 @@
 
 Summary:	Virtual Python Environment builder
 Name:		python-%{module}
-Version:	16.1.0
+Version:	16.6.1
 Release:	1
 Group:		Development/Python
 License:	MIT
