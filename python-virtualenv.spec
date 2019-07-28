@@ -3,12 +3,12 @@
 
 Summary:	Virtual Python Environment builder
 Name:		python-%{module}
-Version:	16.6.2
+Version:	16.7.2
 Release:	1
 Group:		Development/Python
 License:	MIT
 Url:		http://pypi.python.org/pypi/virtualenv
-Source0:	https://files.pythonhosted.org/packages/97/f4/64c1853c3b35c1cfa57f3485b49c8c684f9dcaba4e24c56717b83fc66e90/virtualenv-16.6.2.tar.gz
+Source0:	https://files.pythonhosted.org/packages/a9/8a/580c7176f01540615c2eb3f3ab5462613b4beac4aa63410be89ecc7b7472/virtualenv-16.7.2.tar.gz
 Source1:	virtualenv
 Source2:	virtualenv2
 BuildArch:	noarch
