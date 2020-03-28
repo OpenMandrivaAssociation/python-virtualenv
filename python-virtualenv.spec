@@ -3,12 +3,12 @@
 
 Summary:	Virtual Python Environment builder
 Name:		python-%{module}
-Version:	16.7.9
+Version:	20.0.15
 Release:	1
 Group:		Development/Python
 License:	MIT
 Url:		http://pypi.python.org/pypi/virtualenv
-Source0:	https://files.pythonhosted.org/packages/aa/3b/213c384c65e17995cccd0f2bb993b7b82c41f62e74c2f8f39c8e60549d86/virtualenv-16.7.9.tar.gz
+Source0:	https://files.pythonhosted.org/packages/98/30/13ec6895dd1e2aaef956cc587e19c88fca00b2be52bb29cc4b09995aded5/virtualenv-20.0.15.tar.gz
 Source1:	virtualenv
 Source2:	virtualenv2
 BuildArch:	noarch
@@ -62,7 +62,6 @@ install -m755 %{SOURCE1} -D %{buildroot}%{_bindir}/virtualenv
 %{_bindir}/virtualenv
 %{_bindir}/virtualenv.sh
 %{py3_puresitedir}/virtualenv*
-%{py3_puresitedir}/__pycache__/*.pyc
 
 %files -n python2-%{module}
 %{_bindir}/virtualenv2*
