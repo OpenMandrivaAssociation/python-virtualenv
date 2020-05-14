@@ -3,12 +3,12 @@
 
 Summary:	Virtual Python Environment builder
 Name:		python-%{module}
-Version:	20.0.19
+Version:	20.0.20
 Release:	1
 Group:		Development/Python
 License:	MIT
 Url:		http://pypi.python.org/pypi/virtualenv
-Source0:	https://files.pythonhosted.org/packages/93/a4/4f2e546bd7e80a8340fab699be37b65752cb8f925a853365310b381af5f2/virtualenv-20.0.19.tar.gz
+Source0:	https://files.pythonhosted.org/packages/cc/d4/b0e9c0926b08ae4d3f2439bae3c370917ff8c32fc254acf7023fd131eeb0/virtualenv-20.0.20.tar.gz
 BuildArch:	noarch
 BuildRequires:	python-setuptools
 BuildRequires:  pkgconfig(python3)
