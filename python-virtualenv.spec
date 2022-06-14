@@ -16,6 +16,7 @@ BuildRequires:	pkgconfig(python)
 BuildRequires:	python-pkg-resources
 BuildRequires:	python-pip
 BuildRequires:	python%{pyver}dist(wheel)
+BuildRequires:	python%{pyver}dist(tomli)
 Requires:	pkgconfig(python3)
 Requires:	rpm-build
 
