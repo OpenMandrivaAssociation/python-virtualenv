@@ -3,7 +3,7 @@
 
 Summary:	Virtual Python Environment builder
 Name:		python-%{module}
-Version:	20.14.1
+Version:	20.16.3
 Release:	1
 Group:		Development/Python
 License:	MIT
