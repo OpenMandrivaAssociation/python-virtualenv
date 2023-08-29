@@ -3,8 +3,8 @@
 
 Summary:	Virtual Python Environment builder
 Name:		python-%{module}
-Version:	20.17.1
-Release:	2
+Version:	20.22.0
+Release:	1
 Group:		Development/Python
 License:	MIT
 Url:		http://pypi.python.org/pypi/virtualenv
@@ -17,8 +17,9 @@ BuildRequires:	python-pkg-resources
 BuildRequires:	python-pip
 BuildRequires:	python%{pyver}dist(wheel)
 BuildRequires:	python%{pyver}dist(tomli)
+BuildRequires:	python%{pyver}dist(hatchling)
+BuildRequires:	python%{pyver}dist(hatch-vcs)
 Requires:	pkgconfig(python3)
-Requires:	rpm-build
 
 %description
 virtualenv is a tool to create isolated Python environments.
