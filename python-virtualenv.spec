@@ -7,7 +7,7 @@ Version:	20.26.6
 Release:	1
 Group:		Development/Python
 License:	MIT
-Url:		http://pypi.python.org/pypi/virtualenv
+Url:		https://pypi.python.org/pypi/virtualenv
 Source0:	https://files.pythonhosted.org/packages/source/v/virtualenv/virtualenv-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	python-setuptools
