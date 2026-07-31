@@ -3,7 +3,7 @@
 
 Summary:	Virtual Python Environment builder
 Name:		python-%{module}
-Version:	20.35.4
+Version:	21.7.1
 Release:	1
 Group:		Development/Python
 License:	MIT
@@ -25,7 +25,7 @@ Requires:	pkgconfig(python3)
 virtualenv is a tool to create isolated Python environments.
 
 %prep
-%autosetup -n %{module}-%{version}
+%autosetup -n virtualenv-21.7.1
 
 %build
 %py_build
