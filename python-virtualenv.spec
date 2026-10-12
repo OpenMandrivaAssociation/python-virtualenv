@@ -13,7 +13,6 @@ BuildArch:	noarch
 BuildRequires:	python-setuptools
 BuildRequires:	python-setuptools_scm
 BuildRequires:	pkgconfig(python)
-BuildRequires:	python-pkg-resources
 BuildRequires:	python-pip
 BuildRequires:	python%{pyver}dist(wheel)
 BuildRequires:	python%{pyver}dist(tomli)
