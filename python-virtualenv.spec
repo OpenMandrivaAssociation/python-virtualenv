@@ -27,6 +27,8 @@ virtualenv is a tool to create isolated Python environments.
 %autosetup -n virtualenv-21.7.1
 
 %build
+# The sdist is not a git checkout, so hatch-vcs needs the version.
+export SETUPTOOLS_SCM_PRETEND_VERSION=%{version}
 %py_build
 
 %install
